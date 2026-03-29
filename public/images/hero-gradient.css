@@ -1,0 +1,74 @@
+/* NexaCorp Hero Gradient Background
+   Primary: #2563eb | Secondary: #0f172a | Accent: #f59e0b
+   Usage: Apply .hero-gradient to the hero section container */
+
+.hero-gradient {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e293b 25%,
+    #1e3a5f 50%,
+    #2563eb 75%,
+    #0f172a 100%
+  );
+  background-size: 400% 400%;
+  animation: hero-gradient-shift 12s ease infinite;
+  overflow: hidden;
+}
+
+/* Animated gradient shift */
+@keyframes hero-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Accent shimmer overlay via pseudo-element */
+.hero-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 600px 400px at 20% 50%,
+      rgba(245, 158, 11, 0.08) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 400px 300px at 80% 30%,
+      rgba(37, 99, 235, 0.12) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 300px 300px at 60% 80%,
+      rgba(245, 158, 11, 0.05) 0%,
+      transparent 60%
+    );
+  animation: hero-shimmer 8s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes hero-shimmer {
+  0% {
+    opacity: 0.6;
+    transform: scale(1) translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.05) translateX(20px);
+  }
+}
+
+/* Ensure children sit above the gradient overlay */
+.hero-gradient > * {
+  position: relative;
+  z-index: 1;
+}

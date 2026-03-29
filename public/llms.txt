@@ -1,0 +1,23 @@
+# NexaCorp
+
+## About
+NexaCorp is a technology and consulting company that delivers cutting-edge solutions for forward-thinking enterprises. We specialize in custom development, data analytics, cybersecurity, strategic consulting, team augmentation, and cloud solutions.
+
+## Services
+- Custom Software Development
+- Data Analytics
+- Cybersecurity
+- Strategy Consulting
+- Team Augmentation
+- Cloud Solutions
+
+## Pricing
+- Starter: $29/month
+- Professional: $79/month
+- Enterprise: $199/month
+
+## Contact
+- Email: hello@nexacorp.com
+- Phone: +1 (555) 000-0000
+- Location: San Francisco, CA
+- Website: https://nexacorp.com

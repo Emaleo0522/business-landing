@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+/* ============================================
+   CSS Foundation — NexaCorp Business Landing
+   Linear / Vercel / Stripe aesthetic
+   Tailwind v4 CSS-based configuration
+   ============================================ */
+
+@theme {
+  /* === COLORS: Primary — Corporate Blue (single accent) === */
+  --color-primary-50:  #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --color-primary-950: #172554;
+
+  /* === COLORS: Secondary — Zinc (dark neutrals) === */
+  --color-secondary-50:  #fafafa;
+  --color-secondary-100: #f4f4f5;
+  --color-secondary-200: #e4e4e7;
+  --color-secondary-300: #d4d4d8;
+  --color-secondary-400: #a1a1aa;
+  --color-secondary-500: #71717a;
+  --color-secondary-600: #52525b;
+  --color-secondary-700: #3f3f46;
+  --color-secondary-800: #27272a;
+  --color-secondary-900: #18181b;
+  --color-secondary-950: #0a0a0a;
+
+  /* === COLORS: States === */
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+
+  /* === TYPOGRAPHY === */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* === SPACING EXTRAS === */
+  --spacing-18: 4.5rem;
+  --spacing-88: 22rem;
+  --spacing-128: 32rem;
+
+  /* === ANIMATIONS === */
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+  --animate-slide-up: slideUp 0.5s ease-out forwards;
+  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ============================================
+   Semantic tokens — dark-first
+   ============================================ */
+
+:root {
+  /* RGB companions for alpha compositing */
+  --color-primary-600-rgb: 37, 99, 235;
+
+  /* Semantic backgrounds */
+  --bg-primary:    #ffffff;
+  --bg-secondary:  #f9fafb;
+  --bg-tertiary:   #f1f5f9;
+
+  /* Semantic text */
+  --text-primary:   #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary:  #94a3b8;
+
+  /* Border */
+  --border-color: #e2e8f0;
+
+  /* Z-index named scale */
+  --z-dropdown:  1000;
+  --z-sticky:    1020;
+  --z-fixed:     1030;
+  --z-backdrop:  1040;
+  --z-modal:     1050;
+  --z-popover:   1060;
+  --z-tooltip:   1070;
+  --z-toast:     1090;
+}
+
+/* ============================================
+   Base styles
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: #0f172a;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom selection */
+::selection {
+  background: rgba(37, 99, 235, 0.2);
+}
+
+/* ============================================
+   Fluid typography
+   ============================================ */
+
+.heading-hero {
+  font-size: clamp(2.5rem, 2rem + 4vw, 5rem);
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.heading-section {
+  font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.heading-card {
+  font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+/* ============================================
+   Accessibility
+   ============================================ */
+
+/* Skip navigation link */
+.skip-nav {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: var(--z-toast);
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: top 150ms ease;
+}
+
+.skip-nav:focus {
+  top: 1rem;
+}
+
+/* Safari focus fix */
+:where(button):focus:not(:focus-visible) {
+  outline: 0;
+}
+
+/* Focus visible ring */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   Marquee animation for social proof
+   ============================================ */
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ============================================
+   Custom scrollbar (dark)
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f9fafb;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ============================================
+   Reduced motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

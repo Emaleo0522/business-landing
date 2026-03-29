@@ -1,0 +1,79 @@
+# NexaCorp — Engineering Tomorrow's Success
+
+## About
+NexaCorp is a business technology solutions company that delivers cutting-edge consulting and development services for forward-thinking enterprises. Founded with the mission of engineering tomorrow's success, NexaCorp partners with businesses of all sizes — from early-stage startups to Fortune 500 enterprises — to drive measurable digital transformation.
+
+## Services
+
+### Custom Software Development
+End-to-end software development tailored to your business needs. From web applications to enterprise platforms, we build scalable, maintainable solutions using modern technology stacks.
+
+### Data Analytics
+Transform raw data into actionable insights. Our analytics team helps you implement data pipelines, dashboards, and predictive models that inform strategic decisions.
+
+### Cybersecurity
+Protect your digital assets with comprehensive security assessments, penetration testing, compliance auditing, and ongoing monitoring. We help you stay ahead of evolving threats.
+
+### Strategy Consulting
+Align your technology investments with business objectives. Our consultants bring deep industry expertise to help you navigate digital transformation with clarity and confidence.
+
+### Team Augmentation
+Scale your development capacity with vetted senior engineers who integrate seamlessly with your existing teams. Flexible engagement models from short-term projects to long-term partnerships.
+
+### Cloud Solutions
+Migrate, optimize, and manage your cloud infrastructure. We work with AWS, Azure, and Google Cloud to design architectures that balance performance, cost, and reliability.
+
+## Pricing Plans
+
+### Starter — $29/month
+- Up to 10 hours consulting
+- Email support
+- Basic analytics dashboard
+- Monthly progress reports
+
+### Professional — $79/month
+- Up to 40 hours consulting
+- Priority support
+- Advanced analytics
+- Weekly progress reports
+- Dedicated project manager
+
+### Enterprise — $199/month
+- Unlimited consulting hours
+- 24/7 premium support
+- Custom analytics solutions
+- Daily progress reports
+- Dedicated team
+- Custom SLA
+
+## Key Metrics
+- 500+ projects delivered
+- 98% client satisfaction rate
+- 150+ enterprise clients
+- 10+ years of experience
+
+## Frequently Asked Questions
+
+### What services does NexaCorp offer?
+We offer a comprehensive suite of technology services including custom software development, data analytics, cybersecurity, strategic consulting, team augmentation, and cloud solutions. Each service is tailored to meet your specific business needs.
+
+### How long does a typical project take?
+Project timelines vary based on scope and complexity. A typical project ranges from 4-12 weeks. During our initial consultation, we provide a detailed timeline with milestones so you always know what to expect.
+
+### Do you work with startups or only enterprises?
+We work with businesses of all sizes, from early-stage startups to Fortune 500 enterprises. Our flexible engagement models allow us to scale our services to match your needs and budget.
+
+### What is your pricing model?
+We offer flexible pricing including fixed-price projects, monthly retainers, and time-and-materials engagements. Our plans page gives a starting point, but we customize proposals based on your specific requirements.
+
+### How do you ensure project quality?
+Quality is built into every step of our process. We use agile methodologies, automated testing, code reviews, and continuous integration. Every project includes dedicated QA resources and regular client check-ins.
+
+### What happens after the project is delivered?
+We provide ongoing support and maintenance packages to ensure your solution continues to perform optimally. This includes bug fixes, performance monitoring, feature updates, and 24/7 emergency support.
+
+## Contact
+- Email: hello@nexacorp.com
+- Phone: +1 (555) 000-0000
+- Location: San Francisco, CA
+- Website: https://nexacorp.com

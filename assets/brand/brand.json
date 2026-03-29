@@ -1,0 +1,140 @@
+{
+  "project": "business-landing",
+  "version": 1,
+  "created_at": "2026-03-28",
+  "identity": {
+    "name": "NexaCorp",
+    "slogan": "Engineering Tomorrow's Success",
+    "tagline": "Engineering Tomorrow's Success",
+    "description": "NexaCorp is a premium corporate brand identity for a professional portfolio and business landing page. It conveys innovation, reliability, and forward-thinking leadership through a modern blue-and-amber palette, clean typography, and geometric visual language.",
+    "tone": {
+      "voice": "Professional, confident, innovative",
+      "personality": ["trustworthy", "forward-thinking", "results-driven", "authoritative", "approachable"],
+      "language_style": "Clear, direct, authoritative"
+    },
+    "target": "Business professionals, corporate clients, and decision-makers seeking a reliable technology or consulting partner"
+  },
+  "colors": {
+    "primary": {
+      "hex": "#2563eb",
+      "use": "Main brand color, CTA buttons, active states, key headlines"
+    },
+    "primary_dark": {
+      "hex": "#1d4ed8",
+      "use": "Hover states, pressed buttons, deeper emphasis"
+    },
+    "primary_light": {
+      "hex": "#3b82f6",
+      "use": "Subtle highlights, secondary interactive elements, link hover"
+    },
+    "secondary": {
+      "hex": "#0f172a",
+      "use": "Dark backgrounds, hero sections, footer, navbar"
+    },
+    "accent": {
+      "hex": "#f59e0b",
+      "use": "Decorative accents, badges, star ratings, call-to-action contrast"
+    },
+    "accent_dark": {
+      "hex": "#d97706",
+      "use": "Accent hover states, active accent elements"
+    },
+    "neutral_light": {
+      "hex": "#f8fafc",
+      "use": "Page backgrounds, light sections, card backgrounds"
+    },
+    "neutral_dark": {
+      "hex": "#1e293b",
+      "use": "Dark section backgrounds, secondary text containers"
+    },
+    "text_dark": {
+      "hex": "#0f172a",
+      "use": "Primary body text on light backgrounds (contrast ratio 15.4:1 vs white)"
+    },
+    "text_light": {
+      "hex": "#f8fafc",
+      "use": "Text on dark backgrounds (contrast ratio 15.1:1 vs #0f172a)"
+    },
+    "white": {
+      "hex": "#ffffff",
+      "use": "Pure white backgrounds, card surfaces, overlays"
+    },
+    "success": {
+      "hex": "#10b981",
+      "use": "Success states, positive indicators, checkmarks"
+    },
+    "error": {
+      "hex": "#ef4444",
+      "use": "Error states, validation messages, alerts"
+    }
+  },
+  "typography": {
+    "heading": {
+      "family": "Inter",
+      "weights": ["600", "700"],
+      "source": "google_fonts",
+      "url": "https://fonts.google.com/specimen/Inter"
+    },
+    "body": {
+      "family": "Inter",
+      "weights": ["400", "500"],
+      "source": "google_fonts",
+      "url": "https://fonts.google.com/specimen/Inter"
+    },
+    "accent": {
+      "family": "Inter",
+      "weights": ["600"],
+      "source": "google_fonts",
+      "url": "https://fonts.google.com/specimen/Inter",
+      "use": "Slogan, badges, decorative labels, stat numbers"
+    }
+  },
+  "visual_keywords": ["modern", "clean", "geometric", "professional", "tech", "corporate", "minimal", "bold"],
+  "image_style": {
+    "hero": "Abstract gradient with geometric shapes, blue-to-dark corporate feel, modern tech aesthetic with subtle grid patterns and light rays",
+    "about": "Professional team collaboration, modern office environment, candid leadership photography",
+    "services": "Clean iconography on subtle gradient cards, abstract geometric representations of business concepts",
+    "mood": "Confident, premium, trustworthy, forward-looking"
+  },
+  "logo_style": {
+    "type": "wordmark with geometric icon",
+    "style": "Minimal, clean lines, geometric shapes, sharp edges",
+    "icon_concept": "Abstract N shape formed by interconnected nodes or angular geometric construction",
+    "colors": "Primary blue #2563eb on white, white on dark #0f172a, monochrome variants"
+  },
+  "asset_specs": {
+    "logo": {
+      "width": 800,
+      "height": 800,
+      "bg": "transparent",
+      "formats": ["SVG", "PNG"],
+      "variants": ["primary", "horizontal", "icon-only", "monochrome-dark", "monochrome-light"]
+    },
+    "hero": {
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "variants": ["desktop_1920x1080", "mobile_768x1024"]
+    },
+    "bg_video": {
+      "width": 1920,
+      "height": 1080,
+      "duration_s": 5,
+      "fps": 24,
+      "loop": true,
+      "codec": "H264",
+      "max_size_mb": 15
+    },
+    "thumbnail": {
+      "width": 400,
+      "height": 400,
+      "format": "PNG"
+    }
+  },
+  "prompt_ingredients": {
+    "style_tags": ["corporate", "premium", "modern tech", "geometric", "blue gradient", "clean minimal", "professional", "sleek", "futuristic corporate", "abstract shapes"],
+    "photo_style": "High-end corporate photography with shallow depth of field, cool blue-toned lighting, modern glass offices, clean compositions with negative space, editorial quality",
+    "logo_style": "Minimal geometric wordmark, sharp angular icon, interconnected nodes forming abstract N, clean vector lines, tech-corporate aesthetic, blue on transparent",
+    "avoid_global": "watermark, text overlay, logo, UI elements, borders, frame, cartoon, 3D render, blurry, pixelated, low quality, worst quality, deformed, oversaturated, clipart, stock photo watermark"
+  }
+}

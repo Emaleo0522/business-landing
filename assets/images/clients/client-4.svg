@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" fill="none">
+  <!-- Triangle/arrow logo -->
+  <polygon points="24,6 44,24 24,42" fill="#94a3b8" opacity="0.7"/>
+  <polygon points="8,14 24,24 8,34" fill="#94a3b8" opacity="0.4"/>
+  <text x="52" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#94a3b8">Apex</text>
+</svg>

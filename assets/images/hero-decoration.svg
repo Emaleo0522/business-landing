@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <!-- Tech/Corporate Grid Pattern Overlay -->
+
+  <!-- Dot grid -->
+  <g opacity="0.06">
+    <pattern id="dotGrid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <circle cx="30" cy="30" r="2" fill="white"/>
+    </pattern>
+    <rect width="1920" height="1080" fill="url(#dotGrid)"/>
+  </g>
+
+  <!-- Connecting lines - diagonal network -->
+  <g stroke="white" stroke-width="1" opacity="0.07">
+    <!-- Top-left cluster -->
+    <line x1="120" y1="80" x2="300" y2="200"/>
+    <line x1="300" y1="200" x2="480" y2="140"/>
+    <line x1="480" y1="140" x2="600" y2="280"/>
+    <line x1="300" y1="200" x2="360" y2="380"/>
+    <line x1="120" y1="80" x2="200" y2="260"/>
+    <line x1="200" y1="260" x2="360" y2="380"/>
+
+    <!-- Center cluster -->
+    <line x1="800" y1="300" x2="960" y2="420"/>
+    <line x1="960" y1="420" x2="1100" y2="360"/>
+    <line x1="1100" y1="360" x2="1200" y2="500"/>
+    <line x1="960" y1="420" x2="1020" y2="580"/>
+    <line x1="800" y1="300" x2="900" y2="500"/>
+    <line x1="900" y1="500" x2="1020" y2="580"/>
+    <line x1="1020" y1="580" x2="1200" y2="500"/>
+
+    <!-- Right cluster -->
+    <line x1="1400" y1="200" x2="1560" y2="320"/>
+    <line x1="1560" y1="320" x2="1720" y2="260"/>
+    <line x1="1720" y1="260" x2="1800" y2="400"/>
+    <line x1="1560" y1="320" x2="1620" y2="480"/>
+    <line x1="1800" y1="400" x2="1620" y2="480"/>
+
+    <!-- Bottom connections -->
+    <line x1="240" y1="700" x2="420" y2="820"/>
+    <line x1="420" y1="820" x2="600" y2="760"/>
+    <line x1="600" y1="760" x2="720" y2="900"/>
+    <line x1="420" y1="820" x2="480" y2="960"/>
+
+    <!-- Bottom-right -->
+    <line x1="1300" y1="700" x2="1460" y2="800"/>
+    <line x1="1460" y1="800" x2="1600" y2="740"/>
+    <line x1="1600" y1="740" x2="1740" y2="880"/>
+    <line x1="1460" y1="800" x2="1520" y2="940"/>
+    <line x1="1740" y1="880" x2="1520" y2="940"/>
+
+    <!-- Cross connections -->
+    <line x1="600" y1="280" x2="800" y2="300"/>
+    <line x1="1200" y1="500" x2="1400" y2="200" opacity="0.5"/>
+    <line x1="720" y1="900" x2="1300" y2="700" opacity="0.3"/>
+  </g>
+
+  <!-- Node points at intersections -->
+  <g fill="white" opacity="0.10">
+    <!-- Top-left -->
+    <circle cx="120" cy="80" r="4"/>
+    <circle cx="300" cy="200" r="5"/>
+    <circle cx="480" cy="140" r="3"/>
+    <circle cx="600" cy="280" r="4"/>
+    <circle cx="200" cy="260" r="3"/>
+    <circle cx="360" cy="380" r="4"/>
+
+    <!-- Center -->
+    <circle cx="800" cy="300" r="5"/>
+    <circle cx="960" cy="420" r="6"/>
+    <circle cx="1100" cy="360" r="4"/>
+    <circle cx="1200" cy="500" r="5"/>
+    <circle cx="900" cy="500" r="3"/>
+    <circle cx="1020" cy="580" r="4"/>
+
+    <!-- Right -->
+    <circle cx="1400" cy="200" r="4"/>
+    <circle cx="1560" cy="320" r="5"/>
+    <circle cx="1720" cy="260" r="3"/>
+    <circle cx="1800" cy="400" r="4"/>
+    <circle cx="1620" cy="480" r="4"/>
+
+    <!-- Bottom-left -->
+    <circle cx="240" cy="700" r="4"/>
+    <circle cx="420" cy="820" r="5"/>
+    <circle cx="600" cy="760" r="3"/>
+    <circle cx="720" cy="900" r="4"/>
+    <circle cx="480" cy="960" r="3"/>
+
+    <!-- Bottom-right -->
+    <circle cx="1300" cy="700" r="4"/>
+    <circle cx="1460" cy="800" r="5"/>
+    <circle cx="1600" cy="740" r="3"/>
+    <circle cx="1740" cy="880" r="4"/>
+    <circle cx="1520" cy="940" r="3"/>
+  </g>
+
+  <!-- Geometric accent shapes -->
+  <g opacity="0.05">
+    <!-- Hexagon outlines -->
+    <polygon points="960,100 1010,130 1010,190 960,220 910,190 910,130" stroke="white" stroke-width="1.5" fill="none"/>
+    <polygon points="200,500 240,525 240,575 200,600 160,575 160,525" stroke="white" stroke-width="1" fill="none"/>
+    <polygon points="1700,600 1730,620 1730,660 1700,680 1670,660 1670,620" stroke="white" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Subtle radial glow rings -->
+  <g opacity="0.04">
+    <circle cx="960" cy="420" r="120" stroke="white" stroke-width="1" fill="none"/>
+    <circle cx="960" cy="420" r="200" stroke="white" stroke-width="0.5" fill="none"/>
+    <circle cx="300" cy="200" r="80" stroke="white" stroke-width="0.5" fill="none"/>
+    <circle cx="1560" cy="320" r="90" stroke="white" stroke-width="0.5" fill="none"/>
+  </g>
+</svg>
