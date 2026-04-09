@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# Business Landing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page de negocio conversion-focused con 9 secciones completas. Template estático sin backend, listo para adaptar a cualquier cliente. Construido con el pipeline de vibecoding.
 
-Currently, two official plugins are available:
+## Secciones
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. **Hero** — CTA principal con headline y subheadline
+2. **Social Proof** — Logos o métricas de credibilidad
+3. **Services** — Grilla de servicios con iconos
+4. **About** — Historia / propuesta de valor
+5. **Testimonials** — Cards de testimonios de clientes
+6. **Pricing** — Tabla de precios con planes
+7. **FAQ** — Preguntas frecuentes (accordion)
+8. **Contact** — Formulario de contacto
+9. **Navbar + Footer** — Navegación fija y pie de página
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Capa | Tech |
+|------|------|
+| Framework | Vite + React 19 + TypeScript |
+| Estilos | Tailwind CSS 4 |
+| Animaciones | Framer Motion (scroll-reveal, stagger) |
+| Icons | lucide-react |
+| Linting | ESLint + eslint-plugin-jsx-a11y |
+| Deploy | Vercel (estático) |
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Build y deploy
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
+# Subir dist/ a Vercel o cualquier host estático
 ```
+
+## Accesibilidad
+
+- Skip-nav link (`#main-content`) como primer elemento del DOM
+- jsx-a11y en ESLint — errores de a11y detectados en build time
+- Semántica HTML correcta en todas las secciones
+
+## Estructura
+
+```
+business-landing/
+├── src/
+│   ├── sections/     # Hero, Services, About, Pricing, FAQ, Contact...
+│   ├── components/   # Navbar, Footer
+│   ├── hooks/        # Custom hooks
+│   └── lib/          # Helpers y utilidades
+├── assets/           # Imágenes y recursos
+├── public/           # Assets públicos
+└── vercel.json       # Configuración de deploy
+```
+
+## Uso como template
+
+Editar los textos y datos directamente en cada archivo de `src/sections/`. Los colores y tipografía están en `src/index.css` como custom properties CSS.
